@@ -37,18 +37,18 @@ const events = ref([
       location: 'Coosto',
     },
     { 
-      status: 'Fullstack developer at ',
-      date: 'October 2022',
-      icon: 'pi pi-desktop',
-      color: '#673AB7',
-      location: 'TextKernel',
-    },
-    { 
       status: 'Started master Data Science and Artificial Intelligence at ',
       date: 'September 2021',
       icon: 'pi pi-graduation-cap',
       color: '#FF9800',
       location: 'TU/e',
+    },
+    { 
+      status: 'Fullstack developer at ',
+      date: 'October 2022',
+      icon: 'pi pi-desktop',
+      color: '#673AB7',
+      location: 'TextKernel',
     },
     { 
       status: 'Started as Functionaris Vereniging at ',

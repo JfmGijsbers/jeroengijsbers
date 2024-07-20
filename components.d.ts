@@ -11,6 +11,9 @@ declare module 'vue' {
     Hero: typeof import('./src/components/Hero.vue')['default']
     Life: typeof import('./src/components/Life.vue')['default']
     Projects: typeof import('./src/components/Projects.vue')['default']
+    QRCode: typeof import('./src/components/QRCode.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     SkillCard: typeof import('./src/components/SkillCard.vue')['default']
     Skills: typeof import('./src/components/Skills.vue')['default']
   }

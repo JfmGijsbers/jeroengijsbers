@@ -34,6 +34,19 @@ const projects = [
     images: [],
     githubLink: 'https://github.com/JfmGijsbers/JeroSpider',
     gitDisabled: false,
+  },
+  {
+    name: 'WerkwaardeAdvies',
+    intro: 'Created a website for generating reports for subsidies.',
+    techs: ['Node (express), Vue'],
+    achievements: [
+      'Working together with a client',
+      'Change the website based on client feedback',
+    ],
+    description: 'This is the first website I created for a client, which taught me a lot about asking for feedback and implementing the comments I received. The git repository is currently private.',
+    githubLink: '',
+    gitDisabled: true,
+    images: []
   }
 ]
 
@@ -65,15 +78,15 @@ let currentProject = ref(projects[0]);
       </template>
       <template #content>
         <div class="grid">
-          <div class="col-9">
+          <div class="col-12 md:col-9">
             <div class="grid">
-              <div class="col-6">
+              <div class="col-12 md:col-6 sm:col-12">
                 <b>Technologies</b>
                 <ul>
                   <li v-for="tech in currentProject.techs">{{ tech }}</li>
                 </ul>
               </div>
-              <div class="col-6">
+              <div class="col-12 md:col-6 sm:col-12">
                 <b>Achievements</b>
                 <ul>
                   <li v-for="achievement in currentProject.achievements">{{ achievement }}</li>
