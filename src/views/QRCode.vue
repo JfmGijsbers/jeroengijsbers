@@ -4,12 +4,22 @@ import QrcodeVue, { Level, RenderAs } from 'qrcode.vue';
 
 const value = ref('https://www.jeroengijsbers.com');
 const level = ref<Level>('M');
-const renderAs = ref<RenderAs>('svg');
+const renderAs = ref<RenderAs>('canvas');
 
 const foreground = ref('000000');
 const background = ref('ffffff');
 
 const url = ref('');
+
+function download() {
+  var download = document.getElementById("download");
+  // @ts-ignore
+  var image = document.getElementById("qrcode").toDataURL("image/png")
+      .replace("image/png", "image/octet-stream");
+  // @ts-ignore
+  download.setAttribute("href", image);
+  //download.setAttribute("download","archive.png");
+}
 </script>
 
 <template>
@@ -48,7 +58,7 @@ const url = ref('');
     <div class="col-12 mt-3">
       <qrcode-vue
         id="qrcode"
-        class="w-full mt-4"
+        class="mt-4"
         :size="300"
         :value="value"
         :level="level"
@@ -56,6 +66,11 @@ const url = ref('');
         :foreground="`#${foreground}`"
         :background="`#${background}`"
       />
+    </div>
+    <div class="col-12">
+      <a id="download" download="JeroenGeeftQRCode.png">
+        <Button @click="download">Download QR</Button>
+      </a>
     </div>
   </div>
 </template>
