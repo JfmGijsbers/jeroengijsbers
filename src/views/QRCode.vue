@@ -6,6 +6,9 @@ const value = ref('https://www.jeroengijsbers.com');
 const level = ref<Level>('M');
 const renderAs = ref<RenderAs>('svg');
 
+const foreground = ref('');
+const background = ref('');
+
 const url = ref('');
 </script>
 
@@ -26,14 +29,24 @@ const url = ref('');
         Generate
       </Button>
     </div>
-    <div class="col-12">
+    <div class="col-6 mt-2">
+      <span>Kleur voorgrond: </span>
+      <ColorPicker v-model="foreground" format="hex" />
+    </div>
+    <div class="col-6 mt-2">
+      <span>Kleur achtergrond: </span>
+      <ColorPicker v-model="background" format="hex" />
+    </div>
+    <div class="col-12 mt-3">
       <qrcode-vue
         id="qrcode"
         class="w-full mt-4"
-        size="300"
+        :size="300"
         :value="value"
         :level="level"
         :render-as="renderAs"
+        :foreground="`#${foreground}`"
+        :background="`#${background}`"
       />
     </div>
   </div>

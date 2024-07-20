@@ -14,6 +14,7 @@ import Timeline from 'primevue/timeline';
 import Card from 'primevue/card';
 import InputText from 'primevue/inputtext';
 import FloatLabel from 'primevue/floatlabel';
+import ColorPicker from 'primevue/colorpicker';
 
 const app = createApp(App)
 app.use(PrimveVue);
@@ -25,5 +26,6 @@ app.component('Timeline', Timeline);
 app.component('Card', Card);
 app.component('InputText', InputText);
 app.component('FloatLabel', FloatLabel);
+app.component('ColorPicker', ColorPicker);
 
 app.mount('#app')
