@@ -6,8 +6,8 @@ const value = ref('https://www.jeroengijsbers.com');
 const level = ref<Level>('M');
 const renderAs = ref<RenderAs>('svg');
 
-const foreground = ref('');
-const background = ref('');
+const foreground = ref('000000');
+const background = ref('ffffff');
 
 const url = ref('');
 </script>
