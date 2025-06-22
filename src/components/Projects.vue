@@ -47,6 +47,20 @@ const projects = [
     githubLink: '',
     gitDisabled: true,
     images: []
+  },
+  {
+    name: 'YOLO for Trash Detection',
+    intro: 'Created a Computer Vision model that detects trash in urban environments in real time.',
+    techs: ['YOLO', 'Ultralytics'],
+    achievements: [
+      'Building and labeling my own dataset',
+      'Training a model from scratch',
+      'Graduating from my master with an 8.5'
+    ],
+    description: 'I created a YOLO model that detects trash in real-time, even when the camera is mounted on a car going 50 km/h. It achieved an accuracy mAP score of 67.30%, marking my first succesful implementation of a computer vision model with its own custom-built dataset, creating a basis for many more such projects.',
+    githubLink: '',
+    gitDisabled: true,
+    images: []
   }
 ]
 

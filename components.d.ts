@@ -7,14 +7,18 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Button: typeof import('primevue/button')['default']
+    Card: typeof import('primevue/card')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Hero: typeof import('./src/components/Hero.vue')['default']
     Life: typeof import('./src/components/Life.vue')['default']
+    ProgressBar: typeof import('primevue/progressbar')['default']
     Projects: typeof import('./src/components/Projects.vue')['default']
-    QRCode: typeof import('./src/components/QRCode.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SkillCard: typeof import('./src/components/SkillCard.vue')['default']
     Skills: typeof import('./src/components/Skills.vue')['default']
+    Tag: typeof import('primevue/tag')['default']
+    Timeline: typeof import('primevue/timeline')['default']
   }
 }

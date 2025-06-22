@@ -16,8 +16,8 @@ const events = ref([
       color: '#673AB7',
       location: 'Tapperij de Zwaan',
     },
-    { status: 'Started bachelor Computer Science and Engineering at ',
-      date: 'September 2018',
+    { status: 'BSc Computer Science and Engineering at ',
+      date: 'September 2018 - July 2021',
       icon: 'pi pi-graduation-cap',
       color: '#FF9800',
       location: 'TU/e'
@@ -37,8 +37,8 @@ const events = ref([
       location: 'Coosto',
     },
     { 
-      status: 'Started master Data Science and Artificial Intelligence at ',
-      date: 'September 2021',
+      status: 'MSc Data Science and Artificial Intelligence at ',
+      date: 'September 2021 - June 2025',
       icon: 'pi pi-graduation-cap',
       color: '#FF9800',
       location: 'TU/e',
@@ -51,12 +51,19 @@ const events = ref([
       location: 'TextKernel',
     },
     { 
-      status: 'Started as Functionaris Vereniging at ',
+      status: 'Functionaris Vereniging at ',
       date: 'September 2023',
       icon: 'pi pi-building-columns',
       color: '#9C27B0',
       location: 'T.S.V. Plato',
     },
+    {
+      status: 'Data Scientist / Engineer at ',
+      date: 'June 2025',
+      icon: 'pi pi-desktop',
+      color: '#10b981',
+      location: 'D-Data'
+    }
 ]);
 
 

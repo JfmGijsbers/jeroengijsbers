@@ -27,7 +27,7 @@ const skills = [
     name: 'Machine Learning',
     icon: '',
     text: 'PyTorch / Keras',
-    value: 40,
+    value: 80,
     skillType: 'other',
   },
   {
@@ -55,7 +55,14 @@ const skills = [
     name: 'Nginx',
     icon: '',
     text: '',
-    value: 70,
+    value: 80,
+    skillType: 'technology'
+  },
+  {
+    name: 'Microsoft Azure',
+    icon: '',
+    text: 'Experience with Power BI, AI Foundry and Databricks',
+    value: 75,
     skillType: 'technology'
   }
 ]
